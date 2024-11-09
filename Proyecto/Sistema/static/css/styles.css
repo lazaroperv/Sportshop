@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.encabezado img{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 60px;
+    width: 50px;
+}
+.encabezado{
+    /* Alto */
+    height: 60px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.encabezado a{
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.encabezado a:hover{
+   
+    background-color: red;
+
+}
+
+.menu{
+    /* Interlineado */
+  line-height: 60px; 
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.menu a{
+    margin-right: 5px;
+    /* Color de Fuente */
+    color:black ;
+    /* Quitamos linea de Decoración */
+    text-decoration: none;
+    /* Tamaño de la Fuente */
+    font-size: 18px;
+
+   
+}
+
+/* Hover ---> Al pasar con el mouse
+realiza una accion */
+.encabezado img:hover{
+    filter: shadow(1px 1px 1px #055E68);
+    
+}
+
+.menu a:hover{
+    border-bottom: 2px red;
+}
+
+
+.carousel-inner img{
+    /* Alto
+    1vh = 16px */
+    height: 600px;
+}
+
+.cuerpo{
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.tarjeta{
+    /* Ancho */
+    width: 980px;
+    /* Alto */
+    height: 450px;
+    /* Borde del elemento */
+    border:  dashed #343434;
+    /* Redondeo las Esquinas */
+    border-radius: 15px;
+    display: flex;
+    margin-left: 280px;
+
+}
+.tarjeta a{
+    padding: 10px;
+    height: 50px;
+    margin: 10px;
+
+}
+.tarjeta a:hover{
+    background-color: red;
+}
+article{
+    padding: 15px;
+}
+
+article h1{
+    font-size: 40px;
+    color: #055E68;
+}
+
+article p{
+    line-height: 30px;
+    /* Tamaño de Fuente */
+    
+    /* Margen Superior */
+    margin-top: 20px;
+}
+
+.pi{
+    height: 100px;
+    /* Color de Fondo */
+    background: #EEEEEE;
+    display: flex;
+    /* Centro los elementos */
+    justify-content: center ;
+    
+}
+
+.pie img{
+    /* Ancho */
+    width: 50px;
+    /* Alto */
+    height: 50px;
+    margin-right: 8px;
+    /* Margen Superior */
+    margin-top: 20px;
+}
+.form{ 
+max-width: 500px;
+margin: 0 auto;
+padding: 20px;
+background-color: #6e5151;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+margin-top: 50px;
+margin-bottom: 50px;;
+
+}
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form button {
+    margin: auto;
+    padding: 10px 15px;
+    background-color: #cdcdd1;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 140px;
+    width: 150px;
+}
+
+.form button:hover{
+    background-color: #00817b;
+
+}
+.mesaje{  
+background-color: blue;
+}
+.mesaje label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 40px;
+}
+

@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+ {% block contenedorgeneral %}
+    <div class="Listdo">
+            <div class="tarjeta">
+                <img src="{% static 'imgs/d.png' %}" alt="">
+                <form action="" method="post">
+                <h1>Complete los datos</h1>
+                    {{forms}}
+                    {% csrf_token %} 
+                    <input type="submit" value="Modificar">
+                </form>
+                
+            </div>
+            <!-- div.tarjeta -->
+             
+
+
+    </div>
+ {% endblock %}

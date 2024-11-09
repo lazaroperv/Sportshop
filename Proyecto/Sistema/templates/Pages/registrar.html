@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% block contenedorgeneral %}
+    <form action="" method="post" class="form" enctype="multipart/form-data">
+        <h1>registre sus datos</h1>
+        {% csrf_token %}
+
+        {{form}}
+
+        <button type="submit" class="btn">enviar</button>
+    </form>
+    
+    <div class="mensaje">
+     {{mensaje}}
+    </div>
+
+
+{% endblock %}

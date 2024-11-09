@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+ {% block contenedorgeneral %}
+    <div class="Listdo">
+        {% for Productos in Listar %}
+            <div class="tarjet">
+                <article>   
+                    <h3>Nombre: {{ Productos.Nombre }}</h3>
+                    <h3>Precio: {{ Productos.Precio }}</h3>
+                    <h3>Descrpcion: {{ Productos.Descripcion }}</h3>
+                    <h3>tipo: {{ Productos.tipo }}</h3>
+                </article>
+                <a href="{% url 'eliminar' Productos.Codigo %}" class="btn btn-secondary">eliminar</a>
+                <a href="{% url 'modificar' Productos.Codigo %}" class="btn btn-secondary">modificar</a>
+            
+            </div>
+            <!-- div.tarjeta -->
+             
+
+        {% endfor %}
+
+    </div>
+ {% endblock %}
